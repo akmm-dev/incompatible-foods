@@ -54,27 +54,29 @@ body {
 .card span {
   font-size: 12px;
 }
+.categorycontainer {
+  height: 20%;
+}
 .categoryHeader {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 30%;
-  height: 3%;
+  height: 25%;
   border-bottom: 0.5px solid black;
 }
 .category {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
   padding: 1%;
   width: 100%;
   overflow: scroll;
-  height: 17%;
+  height: 75%;
 }
 button {
-  width: calc(100% / 4 - 5px);
-  height: 30%;
+  width: calc(100% / 3 - 5px);
+  min-width: calc(100% / 3 - 5px);
+  height: 50%;
   margin: 10px;
   background-color: transparent;
   outline: none;
@@ -83,4 +85,36 @@ button {
 }
 button:hover {
   background-color: #bfbfbf;
+}
+@media (min-width: 768px) {
+  .body {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container {
+    width: 58%;
+    height: 100%;
+  }
+  .categorycontainer {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    height: 100%;
+  }
+  .categorycontainer h1 {
+    height: 5%;
+  }
+  .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 95%;
+    overflow: scroll;
+  }
+  .category button {
+    width: 90%;
+    height: 7%;
+  }
 }

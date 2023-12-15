@@ -159,19 +159,19 @@ const data = [
       "Id": 27,
       "FoodA": "ကဏန်း ",
       "FoodB": "ခရမ်းသီး ",
-      "Description": "အဆိပ်သင့် "
+      "Description": "အဆိပ်သင့် "
     },
     {
       "Id": 28,
       "FoodA": "နွားနို့ ",
       "FoodB": "ငါးအစိမ်း ",
-      "Description": "အဆိပ်သင့် "
+      "Description": "အဆိပ်သင့် "
     },
     {
       "Id": 29,
       "FoodA": "အမဲသား",
       "FoodB": "တရုတ်ကြက်သွန်မိတ် ",
-      "Description": "အဆိပ်သင့် "
+      "Description": "အဆိပ်သင့် "
     },
     {
       "Id": 30,
@@ -967,6 +967,7 @@ buttons.forEach((button) => {
         for (let i = 0; i < data.length; i++) { 
             if (data[i].Description.trim() == chosenCategory) {
                 document.getElementsByClassName('card')[i].style.display = '';
+                console.log(1);
             } else {
                 document.getElementsByClassName('card')[i].style.display = 'none';
             }
